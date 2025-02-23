@@ -1,0 +1,17 @@
+@use "./assets/css/main.scss" as *;
+@use "./assets/css/mixins/container.scss" as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.full-width-container {
+  width: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus+SC&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus+SC&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  /* palette 1 */
+  --palette1-1: #ffffff;
+  --palette1-2: #af6e4f;
+  --palette1-3: #8b4518;
+  --palette1-4: #59260d;
+  --palette1-5: #59260b;
+
+  /* palette 2 */
+  --palette2-1: #42413f;
+  --palette2-2: #79685b;
+  --palette2-3: #a6876c;
+  --palette2-4: #edebe8;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  width: 100%; /* Базовая ширина для мобильных устройств */
+
+  /* Mobile (360px) */
+  @media (min-width: 360px) {
+    width: 100%;
+  }
+
+  /* 480px */
+  @media (min-width: 480px) {
+    width: 440px;
+  }
+
+  /* 768px */
+  @media (min-width: 768px) {
+    width: 748px;
+  }
+
+  /* 1000px */
+  @media (min-width: 1000px) {
+    width: 960px;
+  }
+
+  /* 1600px (полный экран) */
+  @media (min-width: 1600px) {
+    width: 1218px;
+  }
+}
+
+* {
+  box-sizing: border-box !important;
+}

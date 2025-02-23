@@ -1,47 +1,35 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
+import StartSections from "./components/sections/StartSections.vue";
+import AllNaturalIngredients from "./components/sections/AllNaturalIngredients.vue";
+import ShopByCategories from "./components/sections/ShopByCategories.vue";
+import PopularFlavors from "./components/sections/PopularFlavors.vue";
+import ReadOurBlog from "./components/sections/ReadOurBlog.vue";
+import YouMayAlsoLike from "./components/sections/YouMayAlsoLike.vue";
+import GetInTouch from "./components/sections/GetInTouch.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="flex flex-col min-h-screen">
+    <Header />
+    <main>
+      <div class="bg-palette2-4 lg:pb-[200px] xl:pb-[300px]">
+        <div class="container">
+          <StartSections />
+        </div>
+      </div>
+      <AllNaturalIngredients />
+      <ShopByCategories />
+      <PopularFlavors />
+      <ReadOurBlog />
+      <YouMayAlsoLike />
+      <GetInTouch />
+    </main>
+    <Footer />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+<style lang="scss">
+@use "./assets/css/main.scss" as *;
 </style>
